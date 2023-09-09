@@ -1,6 +1,6 @@
 import java.util.Locale;
 
-public class Exercicio1 {
+public class ExercicioFormatacao {
 
     public static void main(String[] args) {
 
