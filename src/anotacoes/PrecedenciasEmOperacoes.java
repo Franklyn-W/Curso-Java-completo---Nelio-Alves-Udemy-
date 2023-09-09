@@ -1,3 +1,4 @@
+package anotacoes;
 
 public class PrecedenciasEmOperacoes {
 
