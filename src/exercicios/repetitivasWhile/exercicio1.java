@@ -1,4 +1,4 @@
-package exercicios.repetitivas;
+package exercicios.repetitivasWhile;
 
 import java.util.Scanner;
 
