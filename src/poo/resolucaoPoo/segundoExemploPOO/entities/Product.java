@@ -22,8 +22,7 @@ public class Product {
     }
 
     public String toString(){
-        return "Dados do produto: "
-        + nome
+        return nome
         + ", $ "
         + String.format("%.2f", preco)
         + ", "
