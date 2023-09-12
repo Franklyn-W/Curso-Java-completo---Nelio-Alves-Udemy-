@@ -1,4 +1,4 @@
-package poo.resolucaoPoo.entidades;
+package poo.resolucaoPoo.primeiroExemploPOO.entidades;
 
 public class Triangulo {
 
