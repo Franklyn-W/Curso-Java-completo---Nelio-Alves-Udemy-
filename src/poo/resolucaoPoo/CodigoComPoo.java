@@ -36,11 +36,11 @@ public class CodigoComPoo {
          * P = (a + b + c)/2
          */
 
-        double P = (x.a + x.b + x.c) / 2.0;
-        double areaX = Math.sqrt(P * (P - x.a) * (P - x.b) * (P - x.c));
+        
+        double areaX = x.area();
 
-        P = (y.a + y.b + y.c) / 2.0;
-        double areaY = Math.sqrt(P * (P - y.a) * (P - y.b) * (P - y.c));
+        
+        double areaY = y.area();
 
         System.out.printf("Area do triangulo X: %.4f\n", areaX);
         System.out.printf("Area do triangulo Y: %.4f\n", areaY);
