@@ -1,4 +1,4 @@
-package poo;
+package anotacoes.poo;
 
 public class ExemploClasse {
 

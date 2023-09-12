@@ -1,9 +1,9 @@
-package poo.resolucaoPoo.primeiroExemploPOO;
+package anotacoes.poo.resolucaoPoo.primeiroExemploPOO;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-import poo.resolucaoPoo.primeiroExemploPOO.entidades.Triangulo;
+import anotacoes.poo.resolucaoPoo.primeiroExemploPOO.entidades.Triangulo;
 
 public class CodigoComPoo {
 

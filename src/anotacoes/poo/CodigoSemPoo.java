@@ -1,4 +1,4 @@
-package poo;
+package anotacoes.poo;
 
 import java.util.Locale;
 import java.util.Scanner;

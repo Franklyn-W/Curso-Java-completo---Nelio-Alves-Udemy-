@@ -1,9 +1,9 @@
-package poo.resolucaoPoo.segundoExemploPOO.application;
+package anotacoes.poo.resolucaoPoo.segundoExemploPOO.application;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-import poo.resolucaoPoo.segundoExemploPOO.entities.Product;
+import anotacoes.poo.resolucaoPoo.segundoExemploPOO.entities.Product;
 
 public class Program {
 
