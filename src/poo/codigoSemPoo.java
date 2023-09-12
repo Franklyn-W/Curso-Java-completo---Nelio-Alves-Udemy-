@@ -3,7 +3,7 @@ package poo;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class codigoSemPoo {
+public class CodigoSemPoo {
     
 
     public static void main(String[] args) {
@@ -45,14 +45,6 @@ public class codigoSemPoo {
         } else {
             System.out.println("Triangulo Y tem maior area");
         }
-
-
-
-
-
-
-
-
 
         sc.close();
     }
