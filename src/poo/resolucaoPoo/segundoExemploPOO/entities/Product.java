@@ -21,6 +21,17 @@ public class Product {
         this.quantidade -= quantidade;
     }
 
+    public String toString(){
+        return "Dados do produto: "
+        + nome
+        + ", $ "
+        + String.format("%.2f", preco)
+        + ", "
+        + quantidade
+        + " unidades, Total: $ "
+        + String.format("%.2f", valorTotalEmEstoque());
+    }
+
 
 
 

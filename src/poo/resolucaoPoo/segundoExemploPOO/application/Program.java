@@ -28,7 +28,9 @@ public class Program {
 
 
         System.out.println(product.nome + ", " + product.preco + ", " + product.quantidade);
-        
+
+        System.out.println(product);
+         
         
         
         
