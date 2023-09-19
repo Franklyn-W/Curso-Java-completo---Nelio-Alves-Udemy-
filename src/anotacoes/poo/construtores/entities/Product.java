@@ -2,9 +2,9 @@ package anotacoes.poo.construtores.entities;
 
 public class Product {
 
-    public String nome;
-    public double preco;
-    public int quantidade;
+    private String nome;
+    private double preco;
+    private int quantidade;
 
     public Product() {
     }
@@ -14,10 +14,31 @@ public class Product {
         this.preco = preco;
         this.quantidade = quantidade;
     }
+
     public Product(String nome, double preco) {
         this.nome = nome;
         this.preco = preco;
     }
+
+    // ------------------------------------------------------
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getPreco(){
+        return preco;
+    }
+
+    public void serPreco(double preco){
+        this.preco = preco;
+    }
+
+    // ------------------------------------------------------
 
     public double valorTotalEmEstoque() {
         return preco * quantidade;
