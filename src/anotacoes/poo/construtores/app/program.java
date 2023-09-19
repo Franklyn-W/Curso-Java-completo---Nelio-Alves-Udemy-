@@ -18,9 +18,9 @@ public class program {
         String nome = sc.nextLine();
         System.out.printf("Infome o preco do produto %s: ", nome);
         double preco = sc.nextDouble();
-        System.out.printf("Infome a quantidade do produto %s: ", nome);
-        int quantidade = sc.nextInt();
-        Product product = new Product(nome, preco, quantidade);
+        //System.out.printf("Infome a quantidade do produto %s: ", nome);
+        //int quantidade = sc.nextInt();
+        Product product = new Product(nome, preco);
 
 
 
@@ -29,7 +29,7 @@ public class program {
 
         System.out.println();
         System.out.print("Informe a quantidade a ser ADICIONADA no estoque: ");
-        quantidade = sc.nextInt();
+        int quantidade = sc.nextInt();
         product.adicionarProduto(quantidade);
 
         System.out.println();
