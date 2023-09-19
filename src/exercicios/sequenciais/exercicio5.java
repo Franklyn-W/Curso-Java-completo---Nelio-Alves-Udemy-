@@ -12,7 +12,7 @@ public class exercicio5 {
         
         for (int i = 0; i < 2; i++) {
 
-            int idPeca = sc.nextInt();
+            //int idPeca = sc.nextInt();
             int qtdPeca = sc.nextInt();
             double valorPeca = sc.nextDouble();
             valorTotal += valorPeca*qtdPeca;
