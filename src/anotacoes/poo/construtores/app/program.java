@@ -24,7 +24,7 @@ public class program {
 
         product.setNome("Computador");
         System.out.println("\nNome atualizado: " + product.getNome());
-        product.serPreco(1200.00);
+        product.setPreco(1200.00);
         System.out.println("Preco atualizado " + product.getPreco());
 
 

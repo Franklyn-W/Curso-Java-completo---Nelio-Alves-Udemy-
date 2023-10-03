@@ -19,9 +19,9 @@ public class Product {
         this.nome = nome;
         this.preco = preco;
     }
-
+    
     // ------------------------------------------------------
-
+    
     public String getNome() {
         return nome;
     }
@@ -29,14 +29,19 @@ public class Product {
     public void setNome(String nome) {
         this.nome = nome;
     }
-
+    
     public double getPreco(){
         return preco;
     }
-
-    public void serPreco(double preco){
+    
+    public void setPreco(double preco){
         this.preco = preco;
     }
+    
+    public int getQuantidade() {
+        return quantidade;
+    }
+    
 
     // ------------------------------------------------------
 
@@ -61,4 +66,5 @@ public class Product {
                 + " unidades, Total: $ "
                 + String.format("%.2f", valorTotalEmEstoque());
     }
+    
 }
