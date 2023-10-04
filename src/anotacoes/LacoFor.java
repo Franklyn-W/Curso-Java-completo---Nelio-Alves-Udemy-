@@ -1,4 +1,5 @@
 package anotacoes;
+
 import java.util.Scanner;
 
 public class LacoFor {
@@ -19,5 +20,5 @@ public class LacoFor {
         System.out.println(soma);
         sc.close();
 
-    } 
+    }
 }

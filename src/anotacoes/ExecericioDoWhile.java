@@ -1,4 +1,5 @@
 package anotacoes;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -28,7 +29,7 @@ public class ExecericioDoWhile {
 
             System.out.println("Deseja repetir (s/n)? ");
             resp = leitor.next().charAt(0);
-            
+
         } while (resp == 's');
 
         leitor.close();

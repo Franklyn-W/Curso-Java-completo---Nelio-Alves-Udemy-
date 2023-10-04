@@ -1,32 +1,32 @@
 package anotacoes;
 
 public class FuncoesString {
-    
+
     /*
      * Principais funcoes para trabalhar com String
      * 
      * Formartar
-     *  toLowerCase() - converter tudo para minusculo
-     *  toUpperCase() - converter tudo para maiusculo
-     *  trim() - remover espacos
+     * toLowerCase() - converter tudo para minusculo
+     * toUpperCase() - converter tudo para maiusculo
+     * trim() - remover espacos
      * 
-     * Recortar 
-     *  substring(inicio) - recortar string indicando apenas inicio
-     *  substring(inicio, fim) - recortar string indicando inicio e fim
+     * Recortar
+     * substring(inicio) - recortar string indicando apenas inicio
+     * substring(inicio, fim) - recortar string indicando inicio e fim
      * 
      * Substituir
-     *  Replace (char, char) - substituir uma letra por outra
-     *  Replace(string, string) - substituir uma string por outra
+     * Replace (char, char) - substituir uma letra por outra
+     * Replace(string, string) - substituir uma string por outra
      * 
      * Buscar
-     *  IndexOf - indica a localização da string ou letra
-     *  LastIndexOf - indica a ultima localização da string ou letra
+     * IndexOf - indica a localização da string ou letra
+     * LastIndexOf - indica a ultima localização da string ou letra
      * 
-     * split(" ") - utilizado para separar strings de uma frase, indicando o item separador
+     * split(" ") - utilizado para separar strings de uma frase, indicando o item
+     * separador
      */
 
-     public static void main(String[] args) {
-        
+    public static void main(String[] args) {
 
         String original = "abcde FGHIJ ABC abc DEFG     ";
 
@@ -58,7 +58,7 @@ public class FuncoesString {
         System.out.println("lastIndexOf(\"bc\"): " + j);
 
         String s = "batata maca limao laranja";
-        String [] vetor = s.split(" ");
+        String[] vetor = s.split(" ");
 
         System.out.println(vetor[0]);
         System.out.println(vetor[1]);
@@ -68,5 +68,5 @@ public class FuncoesString {
         for (String palavra : vetor) {
             System.out.println(palavra);
         }
-     }
+    }
 }

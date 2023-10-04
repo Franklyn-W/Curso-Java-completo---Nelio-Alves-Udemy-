@@ -1,11 +1,11 @@
 package anotacoes;
-import java.util.Scanner;
 
+import java.util.Scanner;
 
 public class FuncoesAritmeticas {
 
     public static void main(String[] args) {
-        
+
         double a;
         double b;
         double c;
@@ -14,7 +14,7 @@ public class FuncoesAritmeticas {
         double delta;
 
         Scanner entradScanner = new Scanner(System.in);
-        
+
         System.out.print("Informe o valor de A: ");
         a = entradScanner.nextDouble();
 
@@ -31,11 +31,10 @@ public class FuncoesAritmeticas {
 
         System.out.println("Valor de X' = " + x1);
         System.out.println("Valor de x\" =" + x2);
-        System.out.println("Valores absolutos de: A = " + (int)Math.abs(a) + " B = " + (int)Math.abs(b) + " C = " + (int)Math.abs(c));
+        System.out.println("Valores absolutos de: A = " + (int) Math.abs(a) + " B = " + (int) Math.abs(b) + " C = "
+                + (int) Math.abs(c));
 
         entradScanner.close();
-        
-
 
     }
 }

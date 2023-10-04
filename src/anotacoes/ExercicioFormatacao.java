@@ -1,4 +1,5 @@
 package anotacoes;
+
 import java.util.Locale;
 
 public class ExercicioFormatacao {
@@ -21,7 +22,8 @@ public class ExercicioFormatacao {
         double medida = 53.234567;
 
         /*
-         * Em seguida, usando os valores das variaveis, produza a seguinte saida na tela do console:
+         * Em seguida, usando os valores das variaveis, produza a seguinte saida na tela
+         * do console:
          * Produtos:
          * Computador, com o preço de R% 2100,00
          * Mesa de escritorio, com o preço de R% 650,50
@@ -33,14 +35,14 @@ public class ExercicioFormatacao {
          * Utilizando padrão US: 53.235
          */
 
-         System.out.println("Produtos");
-         System.out.printf("%s, com o preço de R$ %.2f%n", produto1, preco1);
-         System.out.printf("%s, com o preço de R$ %.2f%n", produto2, preco2);
+        System.out.println("Produtos");
+        System.out.printf("%s, com o preço de R$ %.2f%n", produto1, preco1);
+        System.out.printf("%s, com o preço de R$ %.2f%n", produto2, preco2);
 
-         System.out.printf("Cadastro: %d anos de idade, codigo %d e genero: %s%n", idade, codigo, genero);
+        System.out.printf("Cadastro: %d anos de idade, codigo %d e genero: %s%n", idade, codigo, genero);
 
-         System.out.printf("Valor da medida até a oitava casa decimal: %.8f%n", medida);
-         System.out.printf("Arrendondado até a terceira casa decimal: %.3f%n", medida);
-         System.out.printf(Locale.US,"Convertendo para padrão US: %.3f",medida);
+        System.out.printf("Valor da medida até a oitava casa decimal: %.8f%n", medida);
+        System.out.printf("Arrendondado até a terceira casa decimal: %.3f%n", medida);
+        System.out.printf(Locale.US, "Convertendo para padrão US: %.3f", medida);
     }
 }

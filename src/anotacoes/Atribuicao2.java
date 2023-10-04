@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Atribuicao2 {
     public static void main(String[] args) {
-        
-        int x,y;
+
+        int x, y;
 
         x = 5;
 
@@ -14,13 +14,11 @@ public class Atribuicao2 {
         System.out.println(x);
         System.out.println(y);
 
-        
     }
-    
 
     double calcularArea() {
-        
-        int baseMenor, altura, baseMaior; 
+
+        int baseMenor, altura, baseMaior;
 
         try (Scanner entrada = new Scanner(System.in)) {
             System.out.print("Insira a base menor: ");
@@ -33,14 +31,14 @@ public class Atribuicao2 {
             altura = entrada.nextInt();
         }
 
-        double area = ((baseMenor + baseMaior)/2) * altura;
+        double area = ((baseMenor + baseMaior) / 2) * altura;
 
         return area;
     }
 
-    double calcularArea2(int baseMenor, int altura, int baseMaior){
+    double calcularArea2(int baseMenor, int altura, int baseMaior) {
 
-        double area = (baseMenor + baseMaior)/2 * altura;
+        double area = (baseMenor + baseMaior) / 2 * altura;
 
         return area;
     }
