@@ -24,21 +24,21 @@ public class App {
                 case 1:
                     System.out.print("\nInforme o numero da conta: ");
                     int numeroConta = sc.nextInt();
+                    sc.nextLine(); // Para consumir 'o enter' que ficou pendente por causa do nextInt anterior
 
                     System.out.print("Informe o nome do titular: ");
-                    String nome = sc.next();
-                    String aux = sc.nextLine();
+                    String nome = sc.nextLine();
 
                     System.out.print("Deseja realizar deposito inicial (s/n)?: ");
-                    String opcao = sc.next();
+                    String opcao = sc.nextLine();
 
                     if (opcao.equalsIgnoreCase("s")) {
-                        System.out.print("Informe o valor do deposito inicial: ");
+                        System.out.print("Informe o valor do deposito inicial: $");
                         double deposito = sc.nextDouble();
 
-                        conta.CriarConta(numeroConta, nome, deposito);
+                        conta.criarConta(numeroConta, nome, deposito);
                     } else {
-                        conta.CriarConta(numeroConta, nome);
+                        conta.criarConta(numeroConta, nome);
                     }
 
                     System.out.println("\nConta Criada com sucesso!\n"
@@ -47,10 +47,10 @@ public class App {
 
                 case 2:
                     System.out.print(
-                            "\nInforme o valor a ser depositado: ");
+                            "\nInforme o valor a ser depositado: $");
                     double deposito = sc.nextDouble();
 
-                    conta.Deposito(deposito);
+                    conta.deposito(deposito);
 
                     System.out.println(
                             "\nDeposito realizado com sucesso!\n"
@@ -59,10 +59,10 @@ public class App {
 
                 case 3:
                     System.out.println("\nInformamos que cobramos a taxa de $ 5 para cada saque realizado.");
-                    System.out.print("Informe o valor que deseja sacar: ");
+                    System.out.print("Informe o valor que deseja sacar: $");
                     double saque = sc.nextDouble();
 
-                    conta.Saque(saque);
+                    conta.saque(saque);
 
                     System.out.println("Saque realizado com sucesso!\n"
                             + conta.toString());
