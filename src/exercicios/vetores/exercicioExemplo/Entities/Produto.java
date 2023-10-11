@@ -1,4 +1,4 @@
-package exercicios.vetores.exercicio1.Entities;
+package exercicios.vetores.exercicioExemplo.Entities;
 
 public class Produto {
 

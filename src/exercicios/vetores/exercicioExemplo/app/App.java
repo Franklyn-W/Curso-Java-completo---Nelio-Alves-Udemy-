@@ -1,8 +1,8 @@
-package exercicios.vetores.exercicio1.app;
+package exercicios.vetores.exercicioExemplo.app;
 
 import java.util.Scanner;
 
-import exercicios.vetores.exercicio1.Entities.Produto;
+import exercicios.vetores.exercicioExemplo.Entities.Produto;
 
 public class App {
 
