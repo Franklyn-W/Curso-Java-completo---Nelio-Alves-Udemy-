@@ -18,18 +18,18 @@ public class App {
 
         Scanner leitor = new Scanner(System.in);
 
-        Object[] quartos = new Object[9];
+        Pessoas[] hospedes = new Pessoas[10];
 
         System.out.print("Quantos quartos serão locados? ");
 
         int qtdQuartos = leitor.nextInt();
         leitor.nextLine();
 
-        for (int i = 0; i < qtdQuartos; i++) {
+        for (int i = 1; i <= qtdQuartos; i++) {
 
             System.out.println();
             System.out.println("Informações do "
-                    + (i + 1)
+                    + (i)
                     + ("° aluguel: "));
             System.out.print("Nome: ");
             String nome = leitor.nextLine();
@@ -41,18 +41,15 @@ public class App {
             int nrQuarto = leitor.nextInt();
             leitor.nextLine();
 
-            Pessoas hospede = new Pessoas(nome, email, nrQuarto);
-
-            quartos[nrQuarto] = hospede;
+            hospedes[nrQuarto] = new Pessoas(nome, email, nrQuarto);
         }
 
         System.out.println("\nQuartos ocupados: ");
-        for (Object hospedes : quartos) {
+        for (Pessoas hospede : hospedes) {
 
-            if (hospedes != null) {
-                System.out.println(hospedes.toString());
+            if (hospede != null) {
+                System.out.println(hospede.toString());
             }
-
         }
 
         leitor.close();
