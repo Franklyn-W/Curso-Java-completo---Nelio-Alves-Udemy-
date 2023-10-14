@@ -1,4 +1,4 @@
-package anotacoes.poo.vetoresListasMatriz.listas;
+package anotacoes.poo.vetoresListasMatriz;
 
 import java.util.ArrayList;
 import java.util.List;
