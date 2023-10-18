@@ -43,12 +43,13 @@ public class OrderItem {
 
     @Override
     public String toString() {
+        // Ex. Saida - TV, $1000,00, Quantity: 2, Subtotal: $2000,00
         return product.getName()
         + ", $"
         + String.format("%.2f", price)
-        + ", Quantidade: "
+        + ", Quantity: "
         + quantity
-        + ", Subtotal: "
+        + ", Subtotal: $"
         + String.format("%.2f", subTotal());
     }
 

@@ -19,6 +19,7 @@ public class Program {
      * Mostrar sumario do pedido
      * - O instante do pedido, deve ser o instante do sistema: new Date();
      */
+
     public static void main(String[] args) throws ParseException {
 
         Scanner sc = new Scanner(System.in);
@@ -27,8 +28,10 @@ public class Program {
         System.out.println("Enter client data");
         System.out.print("Name: ");
         String name = sc.nextLine();
+
         System.out.print("Email: ");
         String email = sc.next();
+
         System.out.print("Birth date (DD/MM/YYYY): ");
         Date birthDate = sdf.parse(sc.next());
 
@@ -48,6 +51,7 @@ public class Program {
             System.out.println("Enter #" + i + " item data");
             System.out.print("Product name: ");
             String productName = sc.nextLine();
+
             System.out.print("Product price: ");
             double productPrice = sc.nextDouble();
 
@@ -59,7 +63,6 @@ public class Program {
             OrderItem orderItem = new OrderItem(quantity, productPrice, product);
 
             order.addItem(orderItem);
-
         }
 
         System.out.println();

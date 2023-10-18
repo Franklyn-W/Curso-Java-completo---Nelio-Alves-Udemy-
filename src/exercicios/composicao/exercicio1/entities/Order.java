@@ -73,6 +73,16 @@ public class Order {
     public String toString() {
         StringBuilder sb = new StringBuilder();
 
+        /* Ex saida - 
+         * Order moment: 18/10/2013 02:03:00
+         * Order status: PROCESSING
+         * Client: Luis (10/05/1993) - email@gmail.com
+         * Order items:
+         * TV, $1000,00, Quantity: 2, Subtotal: $2000,00
+         * ...
+         * Total price: $2000,00
+         */
+
         sb.append("Order moment: " + sdf.format(momemt) + "\n");
         sb.append("Order status: " + status + "\n");
         sb.append("Client: " + client + "\n");
