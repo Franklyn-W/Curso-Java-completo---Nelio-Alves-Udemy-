@@ -1,6 +1,7 @@
 package anotacoes.herancaPolimorfismo.herenca.entities;
 
 public class Conta {
+// public final class Conta - não permitiria nenhuma classe extender (herdar) seus conteudos;
 
     private Integer numero;
     private String titular;
@@ -42,6 +43,7 @@ public class Conta {
 
     // ///////////////////////////
     public void saque(Double valor) {
+    // final void saque - nao permitiria a sobreposicao do metodo nas classes que extendem a classe Conta
         saldo -= valor + 5.0;
     }
 
