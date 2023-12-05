@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-import anotacoes.tratamentoDeExcecoes.criacaoDeExcecoes.solucaoMuitoRuim.model.entities.Reservation;
+import anotacoes.tratamentoDeExcecoes.criacaoDeExcecoes.solucaoMuitoRuim.model.entities.ReservationMuitoRuim;
 
 public class SolucaoMuitoRuim {
 
@@ -26,7 +26,7 @@ public class SolucaoMuitoRuim {
         if (!checkOut.after(checkIn)) {
             System.out.println("Erro in reservation: Check-out date must be after check-in date");
         } else {
-            Reservation reservation = new Reservation(roomNumber, checkIn, checkOut);
+            ReservationMuitoRuim reservation = new ReservationMuitoRuim(roomNumber, checkIn, checkOut);
             System.out.println(reservation);
             System.out.println();
 
