@@ -1,4 +1,4 @@
-package anotacoes.tratamentoDeExcecoes.criacaoDeExcecoes.model.entities;
+package anotacoes.tratamentoDeExcecoes.criacaoDeExcecoes.solucaoRuim.model.entities;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -42,9 +42,21 @@ public class Reservation {
         // Converte os milisegundos em quantidade de dias
     }
 
-    public void updateDate(Date checkIn, Date checkOut) {
+    public String updateDate(Date checkIn, Date checkOut) {
+
+        Date now = new Date();
+
+        if (checkIn.before(now) || checkOut.before(now)) {
+            return "Erro in reservation: Reservation dates for updates must be future dates";
+        }
+        if (!checkOut.after(checkIn)) {
+            return "Erro in reservation: Check-out date must be after check-in date";
+        }
+
         this.checkIn = checkIn;
         this.checkOut = checkOut;
+
+        return null;
 
     }
 

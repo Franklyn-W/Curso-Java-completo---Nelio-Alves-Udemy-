@@ -1,13 +1,13 @@
-package anotacoes.tratamentoDeExcecoes.criacaoDeExcecoes;
+package anotacoes.tratamentoDeExcecoes.criacaoDeExcecoes.solucaoRuim;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-import anotacoes.tratamentoDeExcecoes.criacaoDeExcecoes.model.entities.Reservation;
+import anotacoes.tratamentoDeExcecoes.criacaoDeExcecoes.solucaoRuim.model.entities.Reservation;
 
-public class App {
+public class SolucaoRuim {
 
     public static void main(String[] args) throws ParseException {
 
@@ -22,7 +22,6 @@ public class App {
         System.out.print("Check-out date (dd/MM/yyyy): ");
         Date checkOut = sdf.parse(sc.next());
 
-        // Solução muito ruim - Lógica inserida no programa principal
         if (!checkOut.after(checkIn)) {
             System.out.println("Erro in reservation: Check-out date must be after check-in date");
         } else {
@@ -36,18 +35,14 @@ public class App {
             System.out.print("Check-out date (dd/MM/yyyy): ");
             checkOut = sdf.parse(sc.next());
 
-            Date now = new Date();
-
-            if (checkIn.before(now) || checkOut.before(now)) {
-                System.out.println("Erro in reservation: Reservation dates for updates must be future dates");
-            } else if (!checkOut.after(checkIn)) {
-                System.out.println("Erro in reservation: Check-out date must be after check-in date");
+            // Solução muito ruim - Lógica inserida no método, que retorna uma String
+            String error = reservation.updateDate(checkIn, checkOut);
+            if (error != null) {
+                System.out.println("Error in reservation: " + error);
             } else {
-                reservation.updateDate(checkIn, checkOut);
                 System.out.println(reservation);
             }
         }
-        
         sc.close();
     }
 }
