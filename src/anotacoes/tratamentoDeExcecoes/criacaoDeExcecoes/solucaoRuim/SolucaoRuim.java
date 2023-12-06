@@ -42,6 +42,16 @@ public class SolucaoRuim {
             } else {
                 System.out.println(reservation);
             }
+            /*
+             * A semântica da operação é prejudicada
+             * *Retornar string não tem nada haver com atualização de reserva
+             * *E se a operação tivesse que retornar uma String?
+             * Ainda não é possível tratar exceções em construtores
+             * Ainda não há auxílio do compilador: o programador deve "lembrar" de verificar
+             * se houve erro
+             * A lógica fica estruturada em condicionais aninhadas
+             */
+
         }
         sc.close();
     }
